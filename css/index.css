@@ -1,3 +1,4 @@
+/* Study by Rayyu */
 p {
   color: red;
   text-align: right;
@@ -16,26 +17,17 @@ ol {
 }
 
 strong {
-  font-weight: 900;
+  font-weight: 500;
 }
 
 em {
   font-style: oblique;
-  font-weight: 600;
+  font-weight: 300;
 }
 
 table {
-  width: 75%;
-  background-color: white;
+  width: 60%;
+  background-color: blue;
   margin-left: auto;
   margin-right: auto;
-}
-
-th {
-  text-transform: uppercase;
-  font-size: 90%;
-  text-align: right;
-  border-bottom: 2px solid black;
-  border-top: 1px solid gray;
-  width: 50%;
 }
