@@ -1,4 +1,10 @@
 /* Study by Rayyu */
+body {
+  background-image: url("./back.jpg");
+  color: #123456;
+  font-weight: 600;
+}
+
 p {
   color: red;
   text-align: right;
@@ -23,19 +29,4 @@ strong {
 em {
   font-style: oblique;
   font-weight: 300;
-}
-
-table {
-  width: 60%;
-  background-color: blue;
-  margin-left: auto;
-  margin-right: auto;
-}
-body {
-    background-image: url("https://i.pinimg.com/564x/af/8d/63/af8d63a477078732b79ff9d9fc60873f.jpg")
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    font-family: Helvetica, Arial, Helvetica, sans-serif;
-    color: #123456;
-    font-weight: 600;
 }
