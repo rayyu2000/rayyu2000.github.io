@@ -4,24 +4,20 @@
 <head>
   <title>
     Ray Yu in B IMD 233 A introduction
-    <script type="text/javascript">
-      var daylist = new Date();
-      document.write("Date：");
-      document.write("Year : " + daylist.getFullYear());
-      document.write("Month : " + daylist.getMonth() + 1);
-      document.write("Day : " + daylist.getDate());
-      var span = document.getElementById('span');
+    <script>
+      var livetime = document.getElementById('livetime');
 
-function time() {
-  var d = new Date();
-  var s = d.getSeconds();
-  var m = d.getMinutes();
-  var h = d.getHours();
-  span.textContent =
-    ("0" + h).substr(-2) + ":" + ("0" + m).substr(-2) + ":" + ("0" + s).substr(-2);
-}
+      function refreshTime() {
+        var d = new Date();
+        var s = d.getSeconds();
+        var m = d.getMinutes();
+        var h = d.getHours();
+        document.open("text/html", "replace");
+        document.write(h + ":" + m + ":" + s);
+        document.close();
+      }
 
-setInterval(time, 1000);
+      setInterval(refreshTime, 1000);
     </script>
   </title>
   <meta charset="utf-8">
