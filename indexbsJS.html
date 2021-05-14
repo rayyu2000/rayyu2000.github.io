@@ -2,23 +2,28 @@
 <html lang="en">
 
 <head>
+  <script>
+    function startTime() {
+      var today = new Date();
+      var h = today.getHours();
+      var m = today.getMinutes();
+      var s = today.getSeconds();
+      m = checkTime(m);
+      s = checkTime(s);
+      document.getElementById('txt').innerHTML =
+        h + ":" + m + ":" + s;
+      var t = setTimeout(startTime, 1000);
+    }
+
+    function checkTime(i) {
+      if (i < 10) {
+        i = "0" + i
+      }; // add zero in front of numbers < 10
+      return i;
+    }
+  </script>
   <title>
     Ray Yu in B IMD 233 A introduction
-    <script>
-      var livetime = document.getElementById('livetime');
-
-      function refreshTime() {
-        var d = new Date();
-        var s = d.getSeconds();
-        var m = d.getMinutes();
-        var h = d.getHours();
-        document.open("text/html", "replace");
-        document.write(h + ":" + m + ":" + s);
-        document.close();
-      }
-
-      setInterval(refreshTime, 1000);
-    </script>
   </title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -39,6 +44,7 @@
   <div class="jumbotron text-center" style="margin-bottom:0">
     <h1>Hi I am Ray Yu. Nice to meet you!</h1>
     <p>This is my first page for introduce myself</p>
+    <div id="txt"></div>
   </div>
 
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
