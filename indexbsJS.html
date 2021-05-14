@@ -8,10 +8,11 @@
       var h = today.getHours();
       var m = today.getMinutes();
       var s = today.getSeconds();
+      var d = today.getDate;
       m = checkTime(m);
       s = checkTime(s);
       document.getElementById('txt').innerHTML =
-        h + ":" + m + ":" + s;
+        "Current Time is " + d + " , " + h + ":" + m + ":" + s;
       var t = setTimeout(startTime, 1000);
     }
 
