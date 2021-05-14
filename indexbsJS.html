@@ -9,10 +9,12 @@
       var m = today.getMinutes();
       var s = today.getSeconds();
       var d = today.getDate();
+      var mo = today.getMonth();
+      var y = today.getFullYear();
       m = checkTime(m);
       s = checkTime(s);
       document.getElementById('txt').innerHTML =
-        "Current Time is " + d + " , " + h + ":" + m + ":" + s;
+        "Current Time is " + y + " , " + mo + " , " + d + " / " + h + ":" + m + ":" + s;
       var t = setTimeout(startTime, 1000);
     }
 
