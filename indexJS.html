@@ -6,10 +6,15 @@
 </HEAD>
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript">
+  var daylist = new Date();
+  document.write("Date：");
+  document.write("Year : " + daylist.getFullYear());
+  document.write("Month : " + daylist.getMonth() + 1);
+  document.write("Day : " + daylist.getDate());
+</script>
 
 <body>
-  <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
-    Click me to display Date and Time.</button>
   <p>This is my first page for introduce myself</p>
   <h2>I am appreciated for join this class</h2>
   <P>Welcome to my first page</P>
@@ -54,16 +59,3 @@
 </body>
 
 </html>
-<script type ="text/javascript">
-var daylist = new Date();
-document.write("Date：");
-document.write(daylist.getFullYear()+"Year");
-document.write(daylist.getMonth()+1,"Month");
-document.write(daylist.getDate()+"Day");
-</script>
-<script>
-let datetime = new Date();
-let Month = datetime.getMonth();
-let Year = datetime.getFullYear();
-let DDay = datetime.getDate();
-</script>
