@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!--Mark's Comment 5/16: Generally, you want to lowercase all tags.-->
 <HEAD>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <TITLE>Rayyu first page of GitHub</TITLE>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <!--Mark's Comment 5/16: Best practice now is to put the script tags at the very bottom of the page right before the closing /body tag.-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
@@ -14,6 +16,7 @@
 </HEAD>
 
 <body>
+  <!--Mark's Comment 5/16: Don't need line 20 since you already include it elsewhere.-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
   <div class="jumbotron text-center">
     <h1>Hi I am Ray Yu. Nice to meet you!</h1>
@@ -34,6 +37,7 @@
   </div>
   <div class="container">
     <div class="row">
+      <!--Mark's Comment 5/16: Need to play around with which size screen you want the stacking to occur... Right now, with a narrow but not too narrow browser window, the text in the three columns overlap. Try changing sm to md and see if that fixes it.-->
       <div class="col-sm-4">
         <table>
           <tr>
@@ -47,6 +51,7 @@
             <td>Ruan Steven</td>
           </tr>
         </table>
+        <!--Mark's Comment 5/16: If you mean for these to be links, use the anchor tag (<a href="">)-->
         <ol>
           <li>https://github.com/Kinaro99/Kinaro99.github.io</li>
           <li>https://github.com/ManedWolfMike87/ManedWolfMike87.github.io</li>
@@ -69,6 +74,7 @@
       </div>
     </div>
   </div>
+  <!--Mark's Comment 5/16: Now that you're using CSS and Bootstrap, don't use the width and height attributes. Instead set those in a style attribute.-->
   <img src="https://www.uab.edu/elearning/images/pictures/academic-technologies/logos/canvas.png" width="300" height="300" alt="School Logo" title="School">
   <a href="https://canvas.uw.edu/" class="ulink">
     <p>https://canvas.uw.edu/</p>
