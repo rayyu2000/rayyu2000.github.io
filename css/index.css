@@ -36,3 +36,16 @@ em {
   font-weight: 300;
   text-align: center;
 }
+
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}
